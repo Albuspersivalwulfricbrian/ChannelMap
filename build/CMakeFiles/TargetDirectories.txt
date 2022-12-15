@@ -1,4 +1,6 @@
 /home/doc/afiadc/ChannelMap/build/CMakeFiles/edit_cache.dir
+/home/doc/afiadc/ChannelMap/build/CMakeFiles/ChannelMapGenerator.dir
 /home/doc/afiadc/ChannelMap/build/CMakeFiles/rebuild_cache.dir
 /home/doc/afiadc/ChannelMap/build/CMakeFiles/ChannelMap.dir
+/home/doc/afiadc/ChannelMap/build/CMakeFiles/ChannelMapGenerator_autogen.dir
 /home/doc/afiadc/ChannelMap/build/CMakeFiles/ChannelMap_autogen.dir

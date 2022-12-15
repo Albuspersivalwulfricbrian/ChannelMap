@@ -4,11 +4,6 @@
 #include "vector"
 #include "sstream"
 #include "iomanip"
-#include "QTextEdit"
-#include "QApplication"
-#include "QPushButton"
-#include "QTableWidget"
-#include "QWidget"
 
 // #include "string"
 // #include "string_view"
@@ -19,7 +14,7 @@
 using json = nlohmann::json;
 
 using namespace std;
-int main(int argc, char *argv[], char* envp[])
+int ChannelMapGenerator()
 {
     json ChannelMap;
     json ChannelInfoArray;
@@ -54,17 +49,6 @@ int main(int argc, char *argv[], char* envp[])
     ChannelMap["channels"] = ChannelInfoArray;
     o << std::setw(4) << ChannelMap << std::endl;
 
-    QApplication app(argc, argv);
 
-//     vector<int> av;
-//     av.push_back(5);
-// //  QPushButton button ("Hello world !");
-// //  button.show();
-//     QTableWidget *tw = new QTableWidget();
-//     tw->setRowCount(5);
-//     tw->setColumnCount(10);
-//     tw->show();
-    // cout << *envp << " " << av[0] << endl;
-    //return app.exec();
     return 0;
 }

@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/doc/afiadc/ChannelMap/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/ChannelMapGenerator.dir/all
 all: CMakeFiles/ChannelMap.dir/all
 
 .PHONY : all
@@ -63,10 +64,39 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/ChannelMapGenerator.dir/clean
 clean: CMakeFiles/ChannelMap.dir/clean
+clean: CMakeFiles/ChannelMapGenerator_autogen.dir/clean
 clean: CMakeFiles/ChannelMap_autogen.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ChannelMapGenerator.dir
+
+# All Build rule for target.
+CMakeFiles/ChannelMapGenerator.dir/all: CMakeFiles/ChannelMapGenerator_autogen.dir/all
+	$(MAKE) -f CMakeFiles/ChannelMapGenerator.dir/build.make CMakeFiles/ChannelMapGenerator.dir/depend
+	$(MAKE) -f CMakeFiles/ChannelMapGenerator.dir/build.make CMakeFiles/ChannelMapGenerator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/doc/afiadc/ChannelMap/build/CMakeFiles --progress-num=6,7,8 "Built target ChannelMapGenerator"
+.PHONY : CMakeFiles/ChannelMapGenerator.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ChannelMapGenerator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/doc/afiadc/ChannelMap/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ChannelMapGenerator.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/doc/afiadc/ChannelMap/build/CMakeFiles 0
+.PHONY : CMakeFiles/ChannelMapGenerator.dir/rule
+
+# Convenience name for target.
+ChannelMapGenerator: CMakeFiles/ChannelMapGenerator.dir/rule
+
+.PHONY : ChannelMapGenerator
+
+# clean rule for target.
+CMakeFiles/ChannelMapGenerator.dir/clean:
+	$(MAKE) -f CMakeFiles/ChannelMapGenerator.dir/build.make CMakeFiles/ChannelMapGenerator.dir/clean
+.PHONY : CMakeFiles/ChannelMapGenerator.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ChannelMap.dir
@@ -75,12 +105,12 @@ clean: CMakeFiles/ChannelMap_autogen.dir/clean
 CMakeFiles/ChannelMap.dir/all: CMakeFiles/ChannelMap_autogen.dir/all
 	$(MAKE) -f CMakeFiles/ChannelMap.dir/build.make CMakeFiles/ChannelMap.dir/depend
 	$(MAKE) -f CMakeFiles/ChannelMap.dir/build.make CMakeFiles/ChannelMap.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/doc/afiadc/ChannelMap/build/CMakeFiles --progress-num=1,2,3,4 "Built target ChannelMap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/doc/afiadc/ChannelMap/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target ChannelMap"
 .PHONY : CMakeFiles/ChannelMap.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ChannelMap.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/doc/afiadc/ChannelMap/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/doc/afiadc/ChannelMap/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ChannelMap.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/doc/afiadc/ChannelMap/build/CMakeFiles 0
 .PHONY : CMakeFiles/ChannelMap.dir/rule
@@ -96,13 +126,40 @@ CMakeFiles/ChannelMap.dir/clean:
 .PHONY : CMakeFiles/ChannelMap.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/ChannelMapGenerator_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/ChannelMapGenerator_autogen.dir/all:
+	$(MAKE) -f CMakeFiles/ChannelMapGenerator_autogen.dir/build.make CMakeFiles/ChannelMapGenerator_autogen.dir/depend
+	$(MAKE) -f CMakeFiles/ChannelMapGenerator_autogen.dir/build.make CMakeFiles/ChannelMapGenerator_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/doc/afiadc/ChannelMap/build/CMakeFiles --progress-num=9 "Built target ChannelMapGenerator_autogen"
+.PHONY : CMakeFiles/ChannelMapGenerator_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ChannelMapGenerator_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/doc/afiadc/ChannelMap/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ChannelMapGenerator_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/doc/afiadc/ChannelMap/build/CMakeFiles 0
+.PHONY : CMakeFiles/ChannelMapGenerator_autogen.dir/rule
+
+# Convenience name for target.
+ChannelMapGenerator_autogen: CMakeFiles/ChannelMapGenerator_autogen.dir/rule
+
+.PHONY : ChannelMapGenerator_autogen
+
+# clean rule for target.
+CMakeFiles/ChannelMapGenerator_autogen.dir/clean:
+	$(MAKE) -f CMakeFiles/ChannelMapGenerator_autogen.dir/build.make CMakeFiles/ChannelMapGenerator_autogen.dir/clean
+.PHONY : CMakeFiles/ChannelMapGenerator_autogen.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/ChannelMap_autogen.dir
 
 # All Build rule for target.
 CMakeFiles/ChannelMap_autogen.dir/all:
 	$(MAKE) -f CMakeFiles/ChannelMap_autogen.dir/build.make CMakeFiles/ChannelMap_autogen.dir/depend
 	$(MAKE) -f CMakeFiles/ChannelMap_autogen.dir/build.make CMakeFiles/ChannelMap_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/doc/afiadc/ChannelMap/build/CMakeFiles --progress-num=5 "Built target ChannelMap_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/doc/afiadc/ChannelMap/build/CMakeFiles --progress-num=10 "Built target ChannelMap_autogen"
 .PHONY : CMakeFiles/ChannelMap_autogen.dir/all
 
 # Build rule for subdir invocation for target.

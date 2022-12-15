@@ -76,12 +76,15 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "CMakeFiles/ChannelMapGenerator_autogen.dir/AutogenInfo.json"
   "CMakeFiles/ChannelMap_autogen.dir/AutogenInfo.json"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/ChannelMapGenerator.dir/DependInfo.cmake"
   "CMakeFiles/ChannelMap.dir/DependInfo.cmake"
+  "CMakeFiles/ChannelMapGenerator_autogen.dir/DependInfo.cmake"
   "CMakeFiles/ChannelMap_autogen.dir/DependInfo.cmake"
   )

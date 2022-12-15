@@ -16,6 +16,11 @@
 			"/home/doc/afiadc/ChannelMap/include/mainwindow.h",
 			"MU",
 			"6YEA5652QU/moc_mainwindow.cpp"
+		],
+		[
+			"/home/doc/afiadc/ChannelMap/include/savemap.h",
+			"MU",
+			"6YEA5652QU/moc_savemap.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -34,7 +39,6 @@
 		"/home/doc/afiadc/ChannelMap/build",
 		"/home/doc/afiadc/ChannelMap",
 		"/home/doc/afiadc/ChannelMap/include",
-		"/home/doc/afiadc/ChannelMap/uis",
 		"/usr/include/x86_64-linux-gnu/qt5",
 		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
 		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
@@ -72,7 +76,8 @@
 	"SOURCES" : 
 	[
 		[ "/home/doc/afiadc/ChannelMap/main.cpp", "MU" ],
-		[ "/home/doc/afiadc/ChannelMap/src/mainwindow.cpp", "MU" ]
+		[ "/home/doc/afiadc/ChannelMap/src/mainwindow.cpp", "MU" ],
+		[ "/home/doc/afiadc/ChannelMap/src/savemap.cpp", "MU" ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

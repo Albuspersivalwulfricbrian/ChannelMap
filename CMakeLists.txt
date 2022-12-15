@@ -11,26 +11,19 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt5 COMPONENTS Widgets  REQUIRED)
+find_package(Qt5 COMPONENTS Widgets Core REQUIRED)
 
 set(TS_FILES ChannelMap_ru_RU.ts)
 file(GLOB HEADERS ${PROJECT_SOURCE_DIR}/include/*.h)
 file(GLOB SOURCES ${PROJECT_SOURCE_DIR}/src/*.cpp)
 file(GLOB UIS ${PROJECT_SOURCE_DIR}/src/*.ui)
+file(GLOB srcexec ${PROJECT_SOURCE_DIR}/include/ChannelMap.h)
 
 
 
-if(ANDROID)
-  add_library(ChannelMap SHARED
-    main.cpp
-    # mainwindow.cpp
-    # mainwindow.h
-    # mainwindow.ui
-    ${TS_FILES}
-  )
-else()
   add_executable(ChannelMap
     main.cpp
+    ${srcexec}
     # mainwindow.cpp
     # mainwindow.h
     # mainwindow.ui
@@ -38,9 +31,12 @@ else()
     ${HEADERS}
     ${SOURCES}
     ${UIS}
-  )
-endif()
 
-target_link_libraries(ChannelMap PUBLIC Qt5::Widgets)
+)
+add_executable(ChannelMapGenerator
+  ChannelMapGenerator.cpp
+)
+
+target_link_libraries(ChannelMap PUBLIC Qt5::Widgets Qt5::Core)
 target_include_directories(ChannelMap PUBLIC ${PROJECT_SOURCE_DIR}/include)
 # qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})

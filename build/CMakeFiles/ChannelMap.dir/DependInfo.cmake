@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/doc/afiadc/ChannelMap/build/ChannelMap_autogen/mocs_compilation.cpp" "/home/doc/afiadc/ChannelMap/build/CMakeFiles/ChannelMap.dir/ChannelMap_autogen/mocs_compilation.cpp.o"
   "/home/doc/afiadc/ChannelMap/main.cpp" "/home/doc/afiadc/ChannelMap/build/CMakeFiles/ChannelMap.dir/main.cpp.o"
   "/home/doc/afiadc/ChannelMap/src/mainwindow.cpp" "/home/doc/afiadc/ChannelMap/build/CMakeFiles/ChannelMap.dir/src/mainwindow.cpp.o"
+  "/home/doc/afiadc/ChannelMap/src/savemap.cpp" "/home/doc/afiadc/ChannelMap/build/CMakeFiles/ChannelMap.dir/src/savemap.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -24,7 +25,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../"
   "ChannelMap_autogen/include"
   "../include"
-  "../uis"
   "/usr/include/x86_64-linux-gnu/qt5"
   "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
   "/usr/include/x86_64-linux-gnu/qt5/QtGui"

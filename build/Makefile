@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ChannelMapGenerator
+
+# Build rule for target.
+ChannelMapGenerator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ChannelMapGenerator
+.PHONY : ChannelMapGenerator
+
+# fast build rule for target.
+ChannelMapGenerator/fast:
+	$(MAKE) -f CMakeFiles/ChannelMapGenerator.dir/build.make CMakeFiles/ChannelMapGenerator.dir/build
+.PHONY : ChannelMapGenerator/fast
+
+#=============================================================================
 # Target rules for targets named ChannelMap
 
 # Build rule for target.
@@ -124,6 +137,19 @@ ChannelMap/fast:
 .PHONY : ChannelMap/fast
 
 #=============================================================================
+# Target rules for targets named ChannelMapGenerator_autogen
+
+# Build rule for target.
+ChannelMapGenerator_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ChannelMapGenerator_autogen
+.PHONY : ChannelMapGenerator_autogen
+
+# fast build rule for target.
+ChannelMapGenerator_autogen/fast:
+	$(MAKE) -f CMakeFiles/ChannelMapGenerator_autogen.dir/build.make CMakeFiles/ChannelMapGenerator_autogen.dir/build
+.PHONY : ChannelMapGenerator_autogen/fast
+
+#=============================================================================
 # Target rules for targets named ChannelMap_autogen
 
 # Build rule for target.
@@ -135,6 +161,60 @@ ChannelMap_autogen: cmake_check_build_system
 ChannelMap_autogen/fast:
 	$(MAKE) -f CMakeFiles/ChannelMap_autogen.dir/build.make CMakeFiles/ChannelMap_autogen.dir/build
 .PHONY : ChannelMap_autogen/fast
+
+ChannelMapGenerator.o: ChannelMapGenerator.cpp.o
+
+.PHONY : ChannelMapGenerator.o
+
+# target to build an object file
+ChannelMapGenerator.cpp.o:
+	$(MAKE) -f CMakeFiles/ChannelMapGenerator.dir/build.make CMakeFiles/ChannelMapGenerator.dir/ChannelMapGenerator.cpp.o
+.PHONY : ChannelMapGenerator.cpp.o
+
+ChannelMapGenerator.i: ChannelMapGenerator.cpp.i
+
+.PHONY : ChannelMapGenerator.i
+
+# target to preprocess a source file
+ChannelMapGenerator.cpp.i:
+	$(MAKE) -f CMakeFiles/ChannelMapGenerator.dir/build.make CMakeFiles/ChannelMapGenerator.dir/ChannelMapGenerator.cpp.i
+.PHONY : ChannelMapGenerator.cpp.i
+
+ChannelMapGenerator.s: ChannelMapGenerator.cpp.s
+
+.PHONY : ChannelMapGenerator.s
+
+# target to generate assembly for a file
+ChannelMapGenerator.cpp.s:
+	$(MAKE) -f CMakeFiles/ChannelMapGenerator.dir/build.make CMakeFiles/ChannelMapGenerator.dir/ChannelMapGenerator.cpp.s
+.PHONY : ChannelMapGenerator.cpp.s
+
+ChannelMapGenerator_autogen/mocs_compilation.o: ChannelMapGenerator_autogen/mocs_compilation.cpp.o
+
+.PHONY : ChannelMapGenerator_autogen/mocs_compilation.o
+
+# target to build an object file
+ChannelMapGenerator_autogen/mocs_compilation.cpp.o:
+	$(MAKE) -f CMakeFiles/ChannelMapGenerator.dir/build.make CMakeFiles/ChannelMapGenerator.dir/ChannelMapGenerator_autogen/mocs_compilation.cpp.o
+.PHONY : ChannelMapGenerator_autogen/mocs_compilation.cpp.o
+
+ChannelMapGenerator_autogen/mocs_compilation.i: ChannelMapGenerator_autogen/mocs_compilation.cpp.i
+
+.PHONY : ChannelMapGenerator_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+ChannelMapGenerator_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles/ChannelMapGenerator.dir/build.make CMakeFiles/ChannelMapGenerator.dir/ChannelMapGenerator_autogen/mocs_compilation.cpp.i
+.PHONY : ChannelMapGenerator_autogen/mocs_compilation.cpp.i
+
+ChannelMapGenerator_autogen/mocs_compilation.s: ChannelMapGenerator_autogen/mocs_compilation.cpp.s
+
+.PHONY : ChannelMapGenerator_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+ChannelMapGenerator_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles/ChannelMapGenerator.dir/build.make CMakeFiles/ChannelMapGenerator.dir/ChannelMapGenerator_autogen/mocs_compilation.cpp.s
+.PHONY : ChannelMapGenerator_autogen/mocs_compilation.cpp.s
 
 ChannelMap_autogen/mocs_compilation.o: ChannelMap_autogen/mocs_compilation.cpp.o
 
@@ -217,6 +297,33 @@ src/mainwindow.cpp.s:
 	$(MAKE) -f CMakeFiles/ChannelMap.dir/build.make CMakeFiles/ChannelMap.dir/src/mainwindow.cpp.s
 .PHONY : src/mainwindow.cpp.s
 
+src/savemap.o: src/savemap.cpp.o
+
+.PHONY : src/savemap.o
+
+# target to build an object file
+src/savemap.cpp.o:
+	$(MAKE) -f CMakeFiles/ChannelMap.dir/build.make CMakeFiles/ChannelMap.dir/src/savemap.cpp.o
+.PHONY : src/savemap.cpp.o
+
+src/savemap.i: src/savemap.cpp.i
+
+.PHONY : src/savemap.i
+
+# target to preprocess a source file
+src/savemap.cpp.i:
+	$(MAKE) -f CMakeFiles/ChannelMap.dir/build.make CMakeFiles/ChannelMap.dir/src/savemap.cpp.i
+.PHONY : src/savemap.cpp.i
+
+src/savemap.s: src/savemap.cpp.s
+
+.PHONY : src/savemap.s
+
+# target to generate assembly for a file
+src/savemap.cpp.s:
+	$(MAKE) -f CMakeFiles/ChannelMap.dir/build.make CMakeFiles/ChannelMap.dir/src/savemap.cpp.s
+.PHONY : src/savemap.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -224,9 +331,17 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... ChannelMapGenerator"
 	@echo "... rebuild_cache"
 	@echo "... ChannelMap"
+	@echo "... ChannelMapGenerator_autogen"
 	@echo "... ChannelMap_autogen"
+	@echo "... ChannelMapGenerator.o"
+	@echo "... ChannelMapGenerator.i"
+	@echo "... ChannelMapGenerator.s"
+	@echo "... ChannelMapGenerator_autogen/mocs_compilation.o"
+	@echo "... ChannelMapGenerator_autogen/mocs_compilation.i"
+	@echo "... ChannelMapGenerator_autogen/mocs_compilation.s"
 	@echo "... ChannelMap_autogen/mocs_compilation.o"
 	@echo "... ChannelMap_autogen/mocs_compilation.i"
 	@echo "... ChannelMap_autogen/mocs_compilation.s"
@@ -236,6 +351,9 @@ help:
 	@echo "... src/mainwindow.o"
 	@echo "... src/mainwindow.i"
 	@echo "... src/mainwindow.s"
+	@echo "... src/savemap.o"
+	@echo "... src/savemap.i"
+	@echo "... src/savemap.s"
 .PHONY : help
 
 

@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ChannelMap.dir/ChannelMap_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/ChannelMap.dir/main.cpp.o"
   "CMakeFiles/ChannelMap.dir/src/mainwindow.cpp.o"
+  "CMakeFiles/ChannelMap.dir/src/savemap.cpp.o"
   "ChannelMap"
   "ChannelMap.pdb"
 )

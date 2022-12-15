@@ -6,5 +6,5 @@ CXX_FLAGS =   -fPIC -std=gnu++17
 
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/home/doc/afiadc/ChannelMap/build -I/home/doc/afiadc/ChannelMap -I/home/doc/afiadc/ChannelMap/build/ChannelMap_autogen/include -I/home/doc/afiadc/ChannelMap/include -I/home/doc/afiadc/ChannelMap/uis -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ 
+CXX_INCLUDES = -I/home/doc/afiadc/ChannelMap/build -I/home/doc/afiadc/ChannelMap -I/home/doc/afiadc/ChannelMap/build/ChannelMap_autogen/include -I/home/doc/afiadc/ChannelMap/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ 
 

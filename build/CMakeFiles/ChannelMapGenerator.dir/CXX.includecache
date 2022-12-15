@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/doc/afiadc/ChannelMap/ChannelMapGenerator.cpp
+nlohmann/json.hpp
+/home/doc/afiadc/ChannelMap/nlohmann/json.hpp
+iostream
+/home/doc/afiadc/ChannelMap/iostream
+fstream
+/home/doc/afiadc/ChannelMap/fstream
+vector
+/home/doc/afiadc/ChannelMap/vector
+sstream
+/home/doc/afiadc/ChannelMap/sstream
+iomanip
+/home/doc/afiadc/ChannelMap/iomanip
+

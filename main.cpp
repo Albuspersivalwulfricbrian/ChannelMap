@@ -1,11 +1,16 @@
 #include "mainwindow.h"
-
+#include "savemap.h"
 #include <QApplication>
+#include <QPalette>
+#include <QColor>
+
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
+
+   QApplication a(argc, argv);
     MainWindow w;
     w.show();
+
     return a.exec();
 }
